@@ -21,7 +21,7 @@ class App extends Component {
     const url = 'https://glacial-hollows-14757.herokuapp.com/articles'
     fetch(url)
     .then(function (response) {
-      return response.json
+      return response.json()
     })
     .then(function (json) {
       console.log('parsed json', json)
